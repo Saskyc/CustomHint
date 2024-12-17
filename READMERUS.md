@@ -17,8 +17,12 @@ custom_hint:
   is_enabled: true
   # Debug mode?
   debug: false
+  # Enable or disable HUD-related commands.
+  enable_hud_commands: true
   # Enable or disable automatic plugin updates.
   auto_updater: true
+  # Enable or disable game hints.
+  game_hint: true
   # Enable or disable hints for spectators.
   hint_for_spectators_is_enabled: true
   # The interval for changing spectator hints (in seconds).
@@ -32,8 +36,6 @@ custom_hint:
   - Overwatch
   - Filmmaker
   - Scp079
-  # Enable or disable HUD-related commands.
-  enable_hud_commands: true
 ```
 После того как настроили `[port]-config.yml`, переходим в `[port]-translation.yml`, снова используем комбинацию *CTRL+F* и вписываем `custom_hint`.  
 Там увидим следующее:
