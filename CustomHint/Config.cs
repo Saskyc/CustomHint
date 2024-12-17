@@ -13,8 +13,14 @@ namespace CustomHintPlugin
         [Description("Debug mode?")]
         public bool Debug { get; set; } = false;
 
+        [Description("Enable or disable HUD-related commands.")]
+        public bool EnableHudCommands { get; set; } = true;
+
         [Description("Enable or disable automatic plugin updates.")]
         public bool AutoUpdater { get; set; } = true;
+
+        [Description("Enable or disable game hints.")]
+        public bool GameHint { get; set; } = true;
 
         [Description("Enable or disable hints for spectators.")]
         public bool HintForSpectatorsIsEnabled { get; set; } = true;
@@ -35,8 +41,5 @@ namespace CustomHintPlugin
             RoleTypeId.Filmmaker,
             RoleTypeId.Scp079
         };
-
-        [Description("Enable or disable HUD-related commands.")]
-        public bool EnableHudCommands { get; set; } = true;
     }
 }
