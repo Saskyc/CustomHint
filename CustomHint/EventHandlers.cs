@@ -144,6 +144,9 @@ namespace CustomHintPlugin
 
         private void DisplayHint(Player player, TimeSpan roundDuration)
         {
+            if (!Plugin.Instance.Config.GameHint)
+                return;
+
             int classDCount = 0;
             int scientistCount = 0;
             int facilityGuardCount = 0;
@@ -195,7 +198,6 @@ namespace CustomHintPlugin
             int generatorsMax = Scp079Recontainer.AllGenerators.Count;
 
             string hintMessage;
-
             if (roundDuration.TotalSeconds <= 59)
                 hintMessage = Plugin.Instance.Translation.HintMessageUnderMinute;
             else if (roundDuration.TotalMinutes < 60)
