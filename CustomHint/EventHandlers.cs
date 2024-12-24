@@ -206,15 +206,13 @@ namespace CustomHint
             else
                 hintMessage = Plugin.Instance.Translation.HintMessageOverHour;
 
-            var GameRole = Methods.GameRole(player);
-
             hintMessage = hintMessage
                 .Replace("{round_duration_hours}", roundDuration.Hours.ToString("D2"))
                 .Replace("{round_duration_minutes}", roundDuration.Minutes.ToString("D2"))
                 .Replace("{round_duration_seconds}", roundDuration.Seconds.ToString("D2"))
                 .Replace("{player_nickname}", player.Nickname)
                 .Replace("{player_role}", GetColoredRoleName(player))
-                .Replace("{player_gamerole}", GetColoredRoleName(player))
+                .Replace("{player_gamerole}", Methods.GameRole(player))
                 .Replace("{tps}", ((int)Server.Tps).ToString())
                 .Replace("{servername}", Server.Name)
                 .Replace("{ip}", Server.IpAddress)
@@ -293,6 +291,7 @@ namespace CustomHint
                 .Replace("{round_duration_seconds}", roundDuration.Seconds.ToString("D2"))
                 .Replace("{player_nickname}", player.Nickname)
                 .Replace("{player_role}", GetColoredRoleName(player))
+                .Replace("{player_gamerole}", Methods.GameRole(player))
                 .Replace("{tps}", ((int)Server.Tps).ToString())
                 .Replace("{servername}", Server.Name)
                 .Replace("{ip}", Server.IpAddress)
