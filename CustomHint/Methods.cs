@@ -7,6 +7,10 @@ namespace CustomHint
     {
         public static string GameRole(Player player)
         {
+            //TODO: HORRIBLE SYSTEM, If it could look thru every RoleTypeId enum and check every translation it would be cool.
+            //Flamingos arent added, didnt find it in enums.
+            //Made by saskyc (blame me) :D
+
             switch(player.Role.Type)
             {
                 case RoleTypeId.ClassD:
