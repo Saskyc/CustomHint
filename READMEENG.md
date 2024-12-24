@@ -107,6 +107,7 @@ Thank you to everyone who uses this plugin. Best of luck!
 | {tps}                  | Server TPS.                          |
 | {player_nickname}      | Player's nickname.                   |
 | {player_role}          | Player's role.                       |
+| {player_GameRoles}     | Player's game role.                  |
 | {round_duration_seconds}| Round duration in seconds.           |
 | {round_duration_minutes}| Round duration in minutes.           |
 | {round_duration_hours} | Round duration in hours.             |
